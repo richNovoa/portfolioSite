@@ -17,7 +17,7 @@ var SCSS_DEST = './src/Assets/css';
 
 // Compile SCSS
 
-gulp.task('compile_scss' , functional(){
+gulp.task('compile_scss', functional() {
 
     gulp.src(SCSS_SRC)
     .pipe(sass().on('error', sass.logError))

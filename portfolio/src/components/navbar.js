@@ -1,15 +1,24 @@
-import React, { Component } from 'react';
+import react from 'react';
+import styled, {css} from 'styled-components';
 
-class Navbar extends Component {
-    render() {
-        return (
-            <div className="Navbar">
-                <a href="#" className="logo">Richard Novoa</a>
-                <a href="#" className="navlink 1">About</a>
-                <a href="#" className="navlink 2">Resume</a>
-            </div>
-          );
-    };
-};
+// Create a Title component that'll render an <h1> tag with some styles
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
 
-export default Navbar;
+// Create a Wrapper component that'll render a <section> tag with some styles
+const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
+
+// Use Title and Wrapper like any other React component – except they're styled!
+render(
+  <Wrapper>
+    <Title>
+      Hello World!
+    </Title>
+  </Wrapper>
+);

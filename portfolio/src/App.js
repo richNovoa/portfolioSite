@@ -9,11 +9,9 @@ import QuoteSection from './components/quotesection';
 function App() {
   return (
     <div className="App">
-     <section className="herosection">
       <Navbar />
       <Hero />
-    </section>
-    <QuoteSection />
+      <QuoteSection />
     </div>
   );
 }

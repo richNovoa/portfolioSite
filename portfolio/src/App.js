@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import './css/style.css';
 
 // components
-import Navbar from './components/navbar'
-import Hero from './components/hero'
+import Navbar from './components/Navbar';
+import Hero from './components/hero';
 import QuoteSection from './components/quotesection';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+       <Navbar />
       <Hero />
       <QuoteSection />
     </div>

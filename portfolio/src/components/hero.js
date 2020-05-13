@@ -1,42 +1,31 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
+import Navbar from "./navbar"
 
+//CSS - style-components
 const HeroDiv = styled.div`
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+   max-width: 1080px;
+   margin: auto;
 
 `
 const H1 = styled.h1`
-    font-family: 'Gordita';
-    margin-bottom: 10px;
-    font-size: 8vw;
-    line-height: 100%;
-    object-fit: fill;
-    color: #17fcd2;
+   font-family: 'Gordita ultra';
+   font-size: 72px;
+   width: 50%;
+   line-height: 100%;
+`
+const H2hero = styled.h2`
+   font-family: gordita;
+   font-size: 20px;
+`
 
-
-`
-const H2 = styled.h2`
-    font-family: Gordita;
-    font-size: 3vw;
-    line-height: 121%;
-    font-weight: 700;
-`
-const TextBoarder = styled.div`
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #102152;
-    margin: 0;
-    padding: 0;
-`
 class Hero extends Component {
     render() {
         return (
             <HeroDiv>
-                <H2>Hi my name is</H2>
-                <H1><TextBoarder>Richard Novoa</TextBoarder></H1>
-                <H2>I'm a product designer based in Miami</H2>
+                <Navbar></Navbar>
+                <H1>Product Designer</H1>
+                <H2hero class="hero">Hi, my name is Richard Novoa, and i live in Miami, FL. When i'm not learning new tricks or designing stuff, I'm spending my time with my three creative experts.</H2hero>
             </HeroDiv>
           );
     };

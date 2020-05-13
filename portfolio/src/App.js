@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './css/style.css';
 
 // components
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar';
 import Hero from './components/hero';
 import QuoteSection from './components/quotesection';
 
